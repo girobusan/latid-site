@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+
+    <title>Links | Example Latid Site</title>           
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Example Latid Site</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#nbcontent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbcontent">
+        <ul class="navbar-nav nav">
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../blog/index.html">Blog</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../docs/index.html">Documentation</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../about.html">About </a></li>
+          
+          
+          
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../tags/index.html">Tags</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      
+    <div id="body" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-8 col-xl-7">
+        
+<h1>Links</h1>
+<small>2021.01.13</small>
+<div class="row mb-5" >
+<div class="group1 col-sm-12 col-md-12">
+
+  </div>
+  </div>
+
+
+          
+<div id="content" style="width: 100%"><p>Latid tries to generate site, viewable as from internet, so from local storage. Therefore,
+it rewrites links to relative ones, when possible. There is two options to set links
+between pages of Latid-powered site.</p>
+<p>We'll show examples, written in plain HTML, but the same syntax for uris used in latid GUI and markdown
+sources.</p>
+<h2>Absolute link</h2>
+<p>The most basic way to make link is to specify absolute link to page. Note, that you
+have to link to <code>uri</code> of generated file, not the source:</p>
+<pre><code>&lt;!--source file is in site/src/dir/file.json--&gt;
+&lt;!--link looks like: --&gt;
+&lt;a href= &quot;/dir/file.html&gt;link!&lt;/a&gt;
+</code></pre>
+<p>Or in markdown:</p>
+<pre><code>[link text](/dir/file.html)
+</code></pre>
+<p>This link will be rewritten to relative in generated site.</p>
+<h2>&quot;Slashplus&quot; link</h2>
+<p>You can link file by its attribute. It's convenient, because link will
+stay actual, even when the location of target file is changed. Latid
+automatically creates an <code>id</code> property for each newly created file, which
+is a good default choice for &quot;slashplus&quot; linking. For example,
+if you have a file with this metadata:</p>
+<pre><code>---
+title : some title
+id: a065529a-4ce2-11eb-ae93-0242ac130002
+...
+name: important_one 
+...
+---
+</code></pre>
+<p>You can link this file using slashplus syntax, like this:</p>
+<pre><code>&lt;a href= &quot;/+id:a065529a-4ce2-11eb-ae93-0242ac130002&quot;&gt;Link!&lt;/a&gt;
+&lt;!-- or: --&gt;
+&lt;a href= &quot;/+name:important_one&quot;&gt;Link!&lt;/a&gt;
+</code></pre>
+<p>Or in markdown text:</p>
+<pre><code>[link](/+name:important_one)
+[link](/+id:a065529a-4ce2-11eb-ae93-0242ac130002)
+</code></pre>
+<p>And this link will be rewritten to actual relative link to file. You may use any
+any unique meta attribute for linking in that way. The attribute, used for
+linking, may not be defined for all files, and it's value must not contain
+spaces.</p>
+</div>
+
+
+          
+
+ 
+    
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2 border-primary">
+            <div class="card-body">
+              Subscribe to my feed:
+              <br />
+              <a href="../rss.xml">RSS</a>
+
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header">Latest posts</div>
+            <ul class = "list-group list-group-flush">
+              
+                 
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/editing.html">Editing, saving and generating site</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/gettingstarted.html">Getting started</a></li>
+              
+            </ul>
+
+
+          </div>
+          <div class="card">
+            <div class="card-header">Top tags</div>
+            <div class="card-body">
+            
+             
+            
+                               
+                
+            <a href="../tags/blocks.html"><span class="badge badge-primary"> Blocks</span></a>
+            
+            
+            <!--</li>-->
+                 
+            
+                               
+                
+            <a href="../tags/examples.html"><span class="badge badge-primary"> Examples</span></a>
+            
+            
+            <!--</li>-->
+                
+              </div>
+                <div class="card-footer">
+                 <a href="../tags/index.html" class="text-right">See all tags</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer >
+      <hr />
+      <div class="row" >
+        <div class="col-12"><p class="text-left text-small text-muted">
+          Powered by &#128031; <a href="https://github.com/girobusan/latid">Latid</a> & <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
+      </div>
+      <script src="../style/bootstrap.bundle.min.js"></script>
+      </footer>
+    </body>
+  </html>
+

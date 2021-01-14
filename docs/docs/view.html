@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+
+    <title>Files and views | Example Latid Site</title>           
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Example Latid Site</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#nbcontent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbcontent">
+        <ul class="navbar-nav nav">
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../blog/index.html">Blog</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../docs/index.html">Documentation</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../about.html">About </a></li>
+          
+          
+          
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../tags/index.html">Tags</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      
+    <div id="body" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-8 col-xl-7">
+        
+<h1>Files and views</h1>
+<small>2021.01.13</small>
+<div class="row mb-5" >
+<div class="group1 col-sm-12 col-md-12">
+
+  </div>
+  </div>
+
+
+          
+<div id="content" style="width: 100%"><p><em>View</em> is an internal representation of site page. It is an object with fields, containing
+various file information.</p>
+<h2>uri</h2>
+<p>Page uri, which is an <strong>absolute</strong> reference of page on site, like <code>/index.html</code> , <code>/tags/tag.html</code>. Therefore, it's always starts with &quot;/&quot;.</p>
+<h2>path</h2>
+<p>Path to source file <strong>relative</strong> to [site directory]/src, like <code>index.json</code> , <code>tags/tag.json</code>. If the file is rendered as more than one page, all of that pages will share common <em>path</em> (because it refers to one source file), but have different <em>uris</em>.</p>
+<p>As a relative path, it's newer starts with &quot;/&quot;.</p>
+<h2>type</h2>
+<p>May be &quot;copy&quot; for files which are copied from source to output, &quot;src&quot; for source files, which are somehow processed and|or edited.</p>
+<h2>nolist</h2>
+<p>View does not displayed in any lists.</p>
+<h2>file</h2>
+<p>Source file, as an object. For example, file metadata is accessible via <code>[view].file.meta</code>, file content — <code>[view].file.content</code>.</p>
+<h2>virtual</h2>
+<p>Defined and true in virtual Views (generated pages, tags)</p>
+<h2>pager_uris</h2>
+<p>List of uris of pages, if the source file was split to multiple pages, and this View represents one of them.</p>
+<h2>current_page</h2>
+<p>If the view represents one of multiple pages, number of page which this particular view represents.</p>
+<h2>tagged_list</h2>
+<p>If view is a tag page, list of views tagged with this tag.</p>
+<h2>pages_list</h2>
+<p>List of views, which are listed on this page, for example, if the page is a section title page (index).</p>
+<h2>tagslist</h2>
+<p>List of tags, attached to this View, with each tag represented as View of tag page. Will be renamed to <code>tags_list</code> in future releases, for consistency.</p>
+</div>
+
+
+          
+
+ 
+    
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2 border-primary">
+            <div class="card-body">
+              Subscribe to my feed:
+              <br />
+              <a href="../rss.xml">RSS</a>
+
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header">Latest posts</div>
+            <ul class = "list-group list-group-flush">
+              
+                 
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/editing.html">Editing, saving and generating site</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/gettingstarted.html">Getting started</a></li>
+              
+            </ul>
+
+
+          </div>
+          <div class="card">
+            <div class="card-header">Top tags</div>
+            <div class="card-body">
+            
+             
+            
+                               
+                
+            <a href="../tags/blocks.html"><span class="badge badge-primary"> Blocks</span></a>
+            
+            
+            <!--</li>-->
+                 
+            
+                               
+                
+            <a href="../tags/examples.html"><span class="badge badge-primary"> Examples</span></a>
+            
+            
+            <!--</li>-->
+                
+              </div>
+                <div class="card-footer">
+                 <a href="../tags/index.html" class="text-right">See all tags</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer >
+      <hr />
+      <div class="row" >
+        <div class="col-12"><p class="text-left text-small text-muted">
+          Powered by &#128031; <a href="https://github.com/girobusan/latid">Latid</a> & <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
+      </div>
+      <script src="../style/bootstrap.bundle.min.js"></script>
+      </footer>
+    </body>
+  </html>
+

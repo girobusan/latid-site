@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+
+    <title>Command Line Interface | Example Latid Site</title>           
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Example Latid Site</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#nbcontent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbcontent">
+        <ul class="navbar-nav nav">
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../blog/index.html">Blog</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../docs/index.html">Documentation</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../about.html">About </a></li>
+          
+          
+          
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../tags/index.html">Tags</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      
+    <div id="body" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-8 col-xl-7">
+        
+<h1>Command Line Interface</h1>
+<small>2021.01.13</small>
+<div class="row mb-5" >
+<div class="group1 col-sm-12 col-md-12">
+
+  </div>
+  </div>
+
+
+          
+<div id="content" style="width: 100%"><p>Latid can be invoked as command line utility. It's useful, when hosting on Jamstack. Just setup
+your build action, using <code>l4cli.js</code> utility.</p>
+<p>Execute this from the site directory:</p>
+<pre><code>node l4cli.js
+</code></pre>
+<p>It will gather source files and generate output static htmls. Invoking with <code>-t</code> key initiates &quot;time aware&quot; generation (files with date in future won't be processed)</p>
+</div>
+
+
+          
+
+ 
+    
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2 border-primary">
+            <div class="card-body">
+              Subscribe to my feed:
+              <br />
+              <a href="../rss.xml">RSS</a>
+
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header">Latest posts</div>
+            <ul class = "list-group list-group-flush">
+              
+                 
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
+              
+                 <li class="list-group-item"><a href="cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/editing.html">Editing, saving and generating site</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/gettingstarted.html">Getting started</a></li>
+              
+            </ul>
+
+
+          </div>
+          <div class="card">
+            <div class="card-header">Top tags</div>
+            <div class="card-body">
+            
+             
+            
+                               
+                
+            <a href="../tags/blocks.html"><span class="badge badge-primary"> Blocks</span></a>
+            
+            
+            <!--</li>-->
+                 
+            
+                               
+                
+            <a href="../tags/examples.html"><span class="badge badge-primary"> Examples</span></a>
+            
+            
+            <!--</li>-->
+                
+              </div>
+                <div class="card-footer">
+                 <a href="../tags/index.html" class="text-right">See all tags</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer >
+      <hr />
+      <div class="row" >
+        <div class="col-12"><p class="text-left text-small text-muted">
+          Powered by &#128031; <a href="https://github.com/girobusan/latid">Latid</a> & <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
+      </div>
+      <script src="../style/bootstrap.bundle.min.js"></script>
+      </footer>
+    </body>
+  </html>
+

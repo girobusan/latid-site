@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+
+    <title>Markdown source files | Example Latid Site</title>           
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Example Latid Site</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#nbcontent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbcontent">
+        <ul class="navbar-nav nav">
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../blog/index.html">Blog</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../docs/index.html">Documentation</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../about.html">About </a></li>
+          
+          
+          
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../tags/index.html">Tags</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      
+    <div id="body" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-8 col-xl-7">
+        
+<h1>Markdown source files</h1>
+<small>2021.01.13</small>
+<div class="row mb-5" >
+<div class="group1 col-sm-12 col-md-12">
+
+  </div>
+  </div>
+
+
+          
+<div id="content" style="width: 100%"><p>You can use markdown formatted source files on your site alongside with others. It's possible to edit those files in GUI, including metadata. But you can not create markdown source files from GUI (yet).</p>
+<h2>Requirements</h2>
+<p>Markdown file will be recognized as source if it has frontmatter header with, at least, <code>title</code> field
+defined, like this, unless the option <code>markdown.force_source</code> in settings file is set to <code>true</code>:</p>
+<pre><code>---
+title: Writting in Markdown
+---
+
+This is Markdown
+-----------------
+And it rocks
+</code></pre>
+<p>If there is no frontmatter or no title field in frontmatter, the file will be simply copied to output.</p>
+<p>If <code>force_source</code> is set, Latid will use all markdown files as source, and figure out metadata by using
+some not-so-sophisticated heuristics.</p>
+<p>All metadata fields are respected and editable in GUI metaeditor. Feel free to use it like this:</p>
+<pre><code>---
+title: Blog post
+tags: interesting, why this, md
+date: 2020.10.25 16:30
+id: 23789
+custom: field
+---
+</code></pre>
+<h2>Links in markdown</h2>
+<p>Links in markdown text is rewritten by <a href="links.html">regular rulers</a> (absolute links rewritten to relative,
+&quot;plus links&quot; expanded, others are not touched). If you have a bunch interlinked markdown files, which use relative
+links between them, you'd better to set<code>markdown.fix_links</code> in settings to <code>true</code>. Thus the extensions
+<code>.md</code> and <code>.markdown</code> in links will be replaced with <code>.html</code>, and, therefore, point to html files
+generated from  markdown. This option is set to <code>true</code> by default.</p>
+<h2>Markdown flavor</h2>
+<p>Latid uses <code>markdown-it</code> library, with inline html enabled, and <code>markdown-it-multimd-table</code> plugin for extended table syntax. Together it works much like Github flavored markdown (GFM).</p>
+</div>
+
+
+          
+
+ 
+    
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2 border-primary">
+            <div class="card-body">
+              Subscribe to my feed:
+              <br />
+              <a href="../rss.xml">RSS</a>
+
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header">Latest posts</div>
+            <ul class = "list-group list-group-flush">
+              
+                 
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/editing.html">Editing, saving and generating site</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/gettingstarted.html">Getting started</a></li>
+              
+            </ul>
+
+
+          </div>
+          <div class="card">
+            <div class="card-header">Top tags</div>
+            <div class="card-body">
+            
+             
+            
+                               
+                
+            <a href="../tags/blocks.html"><span class="badge badge-primary"> Blocks</span></a>
+            
+            
+            <!--</li>-->
+                 
+            
+                               
+                
+            <a href="../tags/examples.html"><span class="badge badge-primary"> Examples</span></a>
+            
+            
+            <!--</li>-->
+                
+              </div>
+                <div class="card-footer">
+                 <a href="../tags/index.html" class="text-right">See all tags</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer >
+      <hr />
+      <div class="row" >
+        <div class="col-12"><p class="text-left text-small text-muted">
+          Powered by &#128031; <a href="https://github.com/girobusan/latid">Latid</a> & <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
+      </div>
+      <script src="../style/bootstrap.bundle.min.js"></script>
+      </footer>
+    </body>
+  </html>
+

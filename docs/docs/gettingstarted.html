@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+
+    <title>Getting started | Example Latid Site</title>           
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Example Latid Site</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#nbcontent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbcontent">
+        <ul class="navbar-nav nav">
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../blog/index.html">Blog</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../docs/index.html">Documentation</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../about.html">About </a></li>
+          
+          
+          
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../tags/index.html">Tags</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      
+    <div id="body" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-8 col-xl-7">
+        
+<h1>Getting started</h1>
+<small>2021.01.13</small>
+<div class="row mb-5" >
+<div class="group1 col-sm-12 col-md-12">
+
+  </div>
+  </div>
+
+
+          
+<div id="content" style="width: 100%"><p>There are your first steps in setting up and start using Latid.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li>Installed node.js, version &gt; 11</li>
+<li>Git, if you dare</li>
+</ul>
+<h2>Install</h2>
+<h3>By downloading the release:</h3>
+<p>Download zip file and unzip it.</p>
+<h3>From repo</h3>
+<p>This method is strongly not recommended, but works.</p>
+<pre><code>git clone git@github.com:girobusan/latid.git
+cd latid 
+npm install
+npm run build_all
+</code></pre>
+<p>Then look for directory named <code>dist</code>.</p>
+<h2>Setup empty site</h2>
+<p>Open distribution folder (dist). Rename the directories:</p>
+<ol>
+<li><code>_config.example</code> to <code>_config</code></li>
+<li><code>src.example</code> to <code>src</code></li>
+</ol>
+<h2>Run server</h2>
+<p>Assuming you have node.js installed, execute from the site folder:</p>
+<pre><code>node latidserv.js
+</code></pre>
+<p>Then point your browser to http://localhost:9999/ You should see something like <a href="gui.html">that</a>.
+You also could use -b key, and the adress will be opened for you automagically (hopefully):</p>
+<pre><code>node latidserv.js -b
+</code></pre>
+<p>(in newer versions of latidserv)</p>
+</div>
+
+
+          
+
+ 
+    
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2 border-primary">
+            <div class="card-body">
+              Subscribe to my feed:
+              <br />
+              <a href="../rss.xml">RSS</a>
+
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header">Latest posts</div>
+            <ul class = "list-group list-group-flush">
+              
+                 
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/editing.html">Editing, saving and generating site</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+              
+                 <li class="list-group-item"><a href="gettingstarted.html">Getting started</a></li>
+              
+            </ul>
+
+
+          </div>
+          <div class="card">
+            <div class="card-header">Top tags</div>
+            <div class="card-body">
+            
+             
+            
+                               
+                
+            <a href="../tags/blocks.html"><span class="badge badge-primary"> Blocks</span></a>
+            
+            
+            <!--</li>-->
+                 
+            
+                               
+                
+            <a href="../tags/examples.html"><span class="badge badge-primary"> Examples</span></a>
+            
+            
+            <!--</li>-->
+                
+              </div>
+                <div class="card-footer">
+                 <a href="../tags/index.html" class="text-right">See all tags</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer >
+      <hr />
+      <div class="row" >
+        <div class="col-12"><p class="text-left text-small text-muted">
+          Powered by &#128031; <a href="https://github.com/girobusan/latid">Latid</a> & <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
+      </div>
+      <script src="../style/bootstrap.bundle.min.js"></script>
+      </footer>
+    </body>
+  </html>
+

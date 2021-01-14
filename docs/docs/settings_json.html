@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+
+    <title>Settings.json structure | Example Latid Site</title>           
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Example Latid Site</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#nbcontent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbcontent">
+        <ul class="navbar-nav nav">
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../blog/index.html">Blog</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../docs/index.html">Documentation</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../about.html">About </a></li>
+          
+          
+          
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../tags/index.html">Tags</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      
+    <div id="body" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-8 col-xl-7">
+        
+<h1>Settings.json structure</h1>
+<small>30.04.12</small>
+<div class="row mb-5" >
+<div class="group1 col-sm-12 col-md-12">
+
+  </div>
+  </div>
+
+
+          
+<div id="content" style="width: 100%"><p>The settings file is  [your site dir/]_config/settings.json. That's how it looks like, explanation follows.</p>
+<pre><code>{
+    &quot;site&quot;: {
+        &quot;title&quot;: &quot;My Awesomness&quot;,
+        &quot;motto&quot;: &quot;Stupidity and bravery&quot;,
+        &quot;url&quot;: &quot;https://example.com&quot;
+    },
+    &quot;editor&quot; : {
+    &quot;content_selector&quot;: &quot;#content&quot;,
+    &quot;default_meta&quot;  :{
+        &quot;tags&quot; : &quot;&quot;,
+        &quot;lang&quot; : &quot;all&quot;
+        }
+    },
+    &quot;output&quot;: {
+      &quot;dir&quot;: &quot;static&quot;,
+      &quot;time_diff&quot;: 0,
+      &quot;debug&quot;: true,
+      &quot;content_selector&quot;: &quot;#content&quot;,
+      &quot;list_max&quot;: 10
+    },
+
+    &quot;markdown&quot;:{
+      &quot;fix_links&quot; : true ,
+      &quot;force_source&quot; : false
+    },
+
+
+    &quot;tags&quot;: {
+      &quot;dir&quot;: &quot;/tags/&quot;
+    },
+    &quot;rss&quot;: {
+        &quot;uri&quot;: &quot;/rss.xml&quot;,
+        &quot;count&quot;: 20
+    },
+    &quot;publish&quot;:{
+        &quot;command&quot; : &quot;&quot;,
+        &quot;args&quot; : &quot;&quot;
+    }
+}
+</code></pre>
+<h2><strong>site</strong></h2>
+<pre><code>&quot;site&quot;: {
+    &quot;title&quot;: &quot;My Awesomness&quot;,
+    &quot;motto&quot;: &quot;Stupidity and bravery&quot;,
+    &quot;url&quot;: &quot;https://example.com&quot;
+}
+</code></pre>
+<p>The title, motto and url of your site. The url is required. Do not accidentally leave the &quot;/&quot; at the end of url like this: 'http://example.com/'</p>
+<h2><strong>editor</strong></h2>
+<pre><code>    &quot;editor&quot; : {
+    &quot;content_selector&quot;: &quot;#content&quot;,
+    &quot;default_meta&quot;  :{
+        &quot;tags&quot; : &quot;&quot;,
+        &quot;lang&quot; : &quot;all&quot;
+        }
+</code></pre>
+<h3>content_selector</h3>
+<p>Required. CSS selector of the main content container. Used in GUI mode. Formerly was defined in <em>output</em> section.</p>
+<h3>default_meta</h3>
+<p>Optional. Default metadata, which will be added to newly created files.</p>
+<h2><strong>output</strong></h2>
+<pre><code>&quot;output&quot;: {
+    &quot;dir&quot;: &quot;static&quot;,
+    &quot;time_diff&quot;: 0,
+    &quot;debug&quot;: true,
+    &quot;content_selector&quot;: &quot;#content&quot;,
+    &quot;list_max&quot;: 10
+}
+</code></pre>
+<h3>debug</h3>
+<p>Debug messages on|off.</p>
+<h3>dir</h3>
+<p>Directory in site folder to output static files. Also hard coded, therefore optional, no need to bother with it.</p>
+<h3>time_diff</h3>
+<p>Very optional — time difference in hours between creation dates, specified in the site files and the environment, in which generator script (l4cli.js) executed. Used when generation started with -t (time-aware) flag only. May come in handy when managing time-sensitive sites on Jamstack platforms. Does not affect GUI operation in any way.</p>
+<h3>content_selector</h3>
+<p>Required. CSS selector of the main content container. Used in GUI mode. Will be moved to <em>editor</em> section in future releases.</p>
+<h3>list_max</h3>
+<p>Required. Maximum number of items per page in multipage article lists.</p>
+<h2>markdown</h2>
+<pre><code>    &quot;markdown&quot;:{
+      &quot;fix_links&quot; : true ,
+      &quot;force_source&quot; : false
+    }
+</code></pre>
+<h3>fix_links</h3>
+<p>Fix links to markdown files, change extension from
+<code>md|markdown</code> to <code>html</code>.</p>
+<h3>force_source</h3>
+<p>If true, every markdown file, even without frontmatter,
+will be processed as source file.</p>
+<h2><strong>tags</strong></h2>
+<pre><code>    &quot;tags&quot;: {
+        &quot;dir&quot;: &quot;/tags/&quot;
+    },
+</code></pre>
+<h3>dir</h3>
+<p>Required. Directory for tag pages.</p>
+<h2><strong>rss</strong></h2>
+<pre><code>    &quot;rss&quot;: {
+        &quot;uri&quot;: &quot;/rss.xml&quot;,
+        &quot;count&quot;: 20
+    }
+</code></pre>
+<h3>uri</h3>
+<p>Required. URI of generated RSS file</p>
+<h3>count</h3>
+<p>Optional. Max number of items in RSS feed.</p>
+<h2><strong>publish</strong></h2>
+<p>Optional. For now (2020.10.24), this settings are used in Latid-browser only.</p>
+<pre><code>    &quot;publish&quot;:{
+        &quot;command&quot; : &quot;&quot;,
+        &quot;args&quot; : &quot;&quot;
+    }
+</code></pre>
+<h3>command</h3>
+<p>Command to run in order to publish the site.</p>
+<h3>args</h3>
+<p>Aforementioned command arguments, string or array. The working directory of the command will be set to the site directory.</p>
+</div>
+
+
+          
+
+ 
+    
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2 border-primary">
+            <div class="card-body">
+              Subscribe to my feed:
+              <br />
+              <a href="../rss.xml">RSS</a>
+
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header">Latest posts</div>
+            <ul class = "list-group list-group-flush">
+              
+                 
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/editing.html">Editing, saving and generating site</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/gettingstarted.html">Getting started</a></li>
+              
+            </ul>
+
+
+          </div>
+          <div class="card">
+            <div class="card-header">Top tags</div>
+            <div class="card-body">
+            
+             
+            
+                               
+                
+            <a href="../tags/blocks.html"><span class="badge badge-primary"> Blocks</span></a>
+            
+            
+            <!--</li>-->
+                 
+            
+                               
+                
+            <a href="../tags/examples.html"><span class="badge badge-primary"> Examples</span></a>
+            
+            
+            <!--</li>-->
+                
+              </div>
+                <div class="card-footer">
+                 <a href="../tags/index.html" class="text-right">See all tags</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer >
+      <hr />
+      <div class="row" >
+        <div class="col-12"><p class="text-left text-small text-muted">
+          Powered by &#128031; <a href="https://github.com/girobusan/latid">Latid</a> & <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
+      </div>
+      <script src="../style/bootstrap.bundle.min.js"></script>
+      </footer>
+    </body>
+  </html>
+

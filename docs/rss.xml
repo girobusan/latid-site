@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Example Latid Site</title>
+        <description>Proud To Be Default</description>
+        <link>https://example.com</link>
+        <lastBuildDate>Wed, 13 Jan 2021 10:21:15 +0300</lastBuildDate>
+        <item>
+            <title>Markdown source files</title>
+            <link>https://example.com/docs/markdown_src.html</link>
+            <guid>https://example.com/docs/markdown_src.html</guid>
+            <description>&lt;p&gt;You can use markdown formatted source files on your site alongside with others. It&apos;s possible to edit those files in GUI, including metadata. But you can not create markdown source files from GUI (yet).&lt;/p&gt; </description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Site directory structure</title>
+            <link>https://example.com/docs/site_directory_structure.html</link>
+            <guid>https://example.com/docs/site_directory_structure.html</guid>
+            <description>&lt;p&gt;The site files organized as follows:&lt;/p&gt; </description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Working with GUI</title>
+            <link>https://example.com/docs/gui.html</link>
+            <guid>https://example.com/docs/gui.html</guid>
+            <description>&lt;p&gt;Latid has a very simple (let&apos;s say — condensed) GUI, which works in your web browser or Latid app.&lt;/p&gt;
+</description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Templates</title>
+            <link>https://example.com/docs/templates.html</link>
+            <guid>https://example.com/docs/templates.html</guid>
+            <description>&lt;p&gt;A lots of Latid site functionality is based upon it&apos;s templating mechanics. Latid uses &lt;a href=&quot;https://mozilla.github.io/nunjucks/&quot;&gt;nunjucks templates&lt;/a&gt;. There is mandatory file, &lt;code&gt;index.njk&lt;/code&gt;, from where you may set up all the routing and other logic using nunjucks abilities to conditionally extend, include and so on.&lt;/p&gt;
+</description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Block editor</title>
+            <link>https://example.com/docs/blockeditor.html</link>
+            <guid>https://example.com/docs/blockeditor.html</guid>
+            <description></description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Files and views</title>
+            <link>https://example.com/docs/view.html</link>
+            <guid>https://example.com/docs/view.html</guid>
+            <description>&lt;p&gt;&lt;em&gt;View&lt;/em&gt; is an internal representation of site page. It is an object with fields, containing various file information.&lt;/p&gt;
+</description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Template variables</title>
+            <link>https://example.com/docs/template_vars.html</link>
+            <guid>https://example.com/docs/template_vars.html</guid>
+            <description>&lt;p&gt;There are bunch of variables, which can be accessed from your nunjucks templates.&lt;/p&gt; </description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Examples</title>
+            <link>https://example.com/tags/examples.html</link>
+            <guid>https://example.com/tags/examples.html</guid>
+            <description>Various examples. This page also is an example of a persistent tag page.&lt;br&gt;</description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Java Script workaround</title>
+            <link>https://example.com/docs/js_workaround.html</link>
+            <guid>https://example.com/docs/js_workaround.html</guid>
+            <description>&lt;p&gt;If your site has scripts, which are launched on DOMContentLoaded or something like this, they might not launch in GUI mode.&lt;/p&gt; </description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Links</title>
+            <link>https://example.com/docs/links.html</link>
+            <guid>https://example.com/docs/links.html</guid>
+            <description>&lt;p&gt;Latid tries to generate site, viewable as from internet, so from local storage. Therefore, it rewrites links to relative ones, when possible. There is two options to set links
+between pages of Latid-powered site.&lt;/p&gt;
+</description>
+            <pubDate>2021-01-13T07:21:15.445Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Editing, saving and generating site</title>
+            <link>https://example.com/docs/editing.html</link>
+            <guid>https://example.com/docs/editing.html</guid>
+            <description>&lt;p&gt;Editing files in GUI is pretty easy, and almost self-explanatory.&lt;/p&gt; </description>
+            <pubDate>2021-01-13T07:21:15.444Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>File metadata</title>
+            <link>https://example.com/docs/file_meta.html</link>
+            <guid>https://example.com/docs/file_meta.html</guid>
+            <description>&lt;p&gt;You can add any metadata to your pages, for any use. Custom meta may work well for maintaining non-standard site structure and|or navigation. Some metadata used by engine, including those:&lt;/p&gt; </description>
+            <pubDate>2021-01-13T07:21:15.444Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Getting started</title>
+            <link>https://example.com/docs/gettingstarted.html</link>
+            <guid>https://example.com/docs/gettingstarted.html</guid>
+            <description>&lt;p&gt;There are your first steps in setting up and start using Latid.&lt;/p&gt; </description>
+            <pubDate>2021-01-13T07:21:15.444Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Command Line Interface</title>
+            <link>https://example.com/docs/cli.html</link>
+            <guid>https://example.com/docs/cli.html</guid>
+            <description>&lt;p&gt;Latid can be invoked as command line utility. It&apos;s useful, when hosting on Jamstack. Just setup your build action, using &lt;code&gt;l4cli.js&lt;/code&gt; utility.&lt;/p&gt;
+</description>
+            <pubDate>2021-01-13T07:21:15.444Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Block examples</title>
+            <link>https://example.com/blog/examples.html</link>
+            <guid>https://example.com/blog/examples.html</guid>
+            <description>Block examples.&lt;br&gt;&lt;p&gt;&lt;img src=&apos;https://example.com/kitty.jpg&apos;&gt;&lt;/p&gt;</description>
+            <pubDate>2020-12-11T15:27:15.446Z</pubDate>
+            <enclosure url="https://example.com/kitty.jpg" length="0" type="image/jpeg"/>
+        </item>
+        <item>
+            <title>About </title>
+            <link>https://example.com/about.html</link>
+            <guid>https://example.com/about.html</guid>
+            <description>Связное множество осмысленно концентрирует метод последовательных приближений Аффинное преобразование исключая очевидный случай отображает функциональный анализ</description>
+            <pubDate>2019-10-09T21:01:15.446Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+        <item>
+            <title>Settings.json structure</title>
+            <link>https://example.com/docs/settings_json.html</link>
+            <guid>https://example.com/docs/settings_json.html</guid>
+            <description>&lt;p&gt;The settings file is  [your site dir/]_config/settings.json. That&apos;s how it looks like, explanation follows.&lt;/p&gt; </description>
+            <pubDate>0030-04-11T21:30:58.446Z</pubDate>
+            <enclosure url="null" length="0"/>
+        </item>
+    </channel>
+</rss>

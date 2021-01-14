@@ -1,0 +1,39 @@
+{
+  "//": [
+    "This is an example Latid config file",
+    "tweak it as you want"
+  ],
+  "site": {
+    "title": "Example Latid Site",
+    "motto": "Proud To Be Default",
+    "url": "https://example.com"
+  },
+  "editor" : {
+    "content_selector": "#content",
+    "default_meta"  :{
+      "tags" : ""
+    }
+  },
+  "output": {
+    "dir": "docs",
+    "time_diff": 0,
+    "debug": true,
+    "content_selector": "#content",
+    "list_max": 10
+  },
+  "markdown":{
+    "fix_links" : true ,
+    "force_source" : false
+  },
+  "tags": {
+    "dir": "/tags/"
+  },
+  "rss": {
+    "uri": "/rss.xml",
+    "count": 20
+  },
+  "publish":{
+    "command" : "",
+    "args" : ""
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+
+    <title>Editing, saving and generating site | Example Latid Site</title>           
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Example Latid Site</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#nbcontent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbcontent">
+        <ul class="navbar-nav nav">
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../blog/index.html">Blog</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../docs/index.html">Documentation</a></li>
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../about.html">About </a></li>
+          
+          
+          
+          
+          
+          
+          <li class="nav-item" >
+          <a  class="nav-link" href="../tags/index.html">Tags</a></li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      
+    <div id="body" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-8 col-xl-7">
+        
+<h1>Editing, saving and generating site</h1>
+<small>2021.01.13</small>
+<div class="row mb-5" >
+<div class="group1 col-sm-12 col-md-12">
+
+  </div>
+  </div>
+
+
+          
+<div id="content" style="width: 100%"><p>Editing files in GUI is pretty easy, and almost self-explanatory.</p>
+<h2>Editing existing page</h2>
+<p>When you're in GUI, you can browse to page, than click <em>view/edit</em> button, and page will go to edit mode. For markdown source files you'll see simple text editor, for files, created in block editor the interface will be a bit fancier.</p>
+<h2>Saving pages</h2>
+<p>After editing, just click <em>save current</em> button.</p>
+<h2>Creating new page or directory</h2>
+<p>First, browse to directory, where new page will be created. For example, if site has a blog section, and you want to add a new blog article, you (usually) have to browse to the title page of the blog, or to any regular page inside that section.</p>
+<p>Than click <em>+page</em> or <em>+dir</em> (former will add subsection to current section), and you'll be presented with new blank page. Now you can add|edit metadata for new page, and fill it with some content.</p>
+<h2>Block editor basics</h2>
+<p>Pages, created with GUI, are composed of content blocks. To add the first block to the empty page, go to edit mode and move cursor over <em>edit mode</em> badge on top of the page. The plus sign will appear on the left, click it and you'll see the blocks menu. Choose your first block there and click it's icon. Block will be added.</p>
+<p>To add more blocks, hover your mouse over any existent block, and the plus button will appear on it's left. Than you can add new block after.</p>
+<p>Refer to <code>blockeditor.md</code> for detailed instructions.</p>
+<h2>Generating static files</h2>
+<p>After you finish your edits, you can generate final, static version of the site. From GUI this function engaged by clicking <em>generate site</em> button.</p>
+<p>You can also use the <a href="cli.html">command line utility</a>. Open your terminal, change current directory to your site directory and run following command:</p>
+<pre><code>node l4cli.js
+</code></pre>
+<p>The result of both actions will be the same. The latter is useful, when you deploying to Jamstack server.</p>
+</div>
+
+
+          
+
+ 
+    
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-2 border-primary">
+            <div class="card-body">
+              Subscribe to my feed:
+              <br />
+              <a href="../rss.xml">RSS</a>
+
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-header">Latest posts</div>
+            <ul class = "list-group list-group-flush">
+              
+                 
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="editing.html">Editing, saving and generating site</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/gettingstarted.html">Getting started</a></li>
+              
+            </ul>
+
+
+          </div>
+          <div class="card">
+            <div class="card-header">Top tags</div>
+            <div class="card-body">
+            
+             
+            
+                               
+                
+            <a href="../tags/blocks.html"><span class="badge badge-primary"> Blocks</span></a>
+            
+            
+            <!--</li>-->
+                 
+            
+                               
+                
+            <a href="../tags/examples.html"><span class="badge badge-primary"> Examples</span></a>
+            
+            
+            <!--</li>-->
+                
+              </div>
+                <div class="card-footer">
+                 <a href="../tags/index.html" class="text-right">See all tags</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer >
+      <hr />
+      <div class="row" >
+        <div class="col-12"><p class="text-left text-small text-muted">
+          Powered by &#128031; <a href="https://github.com/girobusan/latid">Latid</a> & <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
+      </div>
+      <script src="../style/bootstrap.bundle.min.js"></script>
+      </footer>
+    </body>
+  </html>
+
