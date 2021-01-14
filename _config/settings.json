@@ -4,9 +4,9 @@
     "tweak it as you want"
   ],
   "site": {
-    "title": "Example Latid Site",
-    "motto": "Proud To Be Default",
-    "url": "https://example.com"
+    "title": "Latid Playground",
+    "motto": "Examples, snippets, docs. ",
+    "url": "https://girobusan.github.io/latid.github.io/index.html"
   },
   "editor" : {
     "content_selector": "#content",
@@ -23,7 +23,7 @@
   },
   "markdown":{
     "fix_links" : true ,
-    "force_source" : false
+    "force_source" : true
   },
   "tags": {
     "dir": "/tags/"
