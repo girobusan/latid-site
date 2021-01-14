@@ -8,14 +8,14 @@
     "include_regexp": "/(blog|docs)/.*"
   },
   "content": {
-    "editor": "BlEd/1.2.15",
-    "stime": "2021-01-05T11:29:01.580Z",
-    "time": 1609846141580,
+    "editor": "BlEd/1.2.16",
+    "stime": "2021-01-14T17:21:21.527Z",
+    "time": 1610644881527,
     "blocks": [
       {
         "type": "paragraph",
         "data": {
-          "text": "Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad."
+          "text": "This site is built using<a href=\"https://github.com/girobusan/latid\"> Latid static site generator</a>, as an example. Feel free to browse the site, or peek into <a href=\"https://github.com/girobusan/latid.github.io\">its source.</a>"
         }
       }
     ]

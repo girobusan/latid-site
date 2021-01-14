@@ -33,7 +33,7 @@
     "count": 20
   },
   "publish":{
-    "command" : "",
+    "command" : "_config/publish.sh",
     "args" : ""
   }
 }
