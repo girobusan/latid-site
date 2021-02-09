@@ -1,5 +1,8 @@
 ---
 title: Links
+date: 2021.01.13 10:21
+section: 01.10
+excerpt: <p>Latid tries to generate site, viewable as from internet, so from local storage. Therefore, it rewrites links to relative ones, when possible. There is two options to set linksbetween pages of Latid-powered site.</p>
 ---
 Latid tries to generate site, viewable as from internet, so from local storage. Therefore, 
 it rewrites links to relative ones, when possible. There is two options to set links

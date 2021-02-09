@@ -1,7 +1,9 @@
 ---
 title: Files and views
+date: 2021.01.13 10:21
+section: 03.03
+excerpt: <p><em>View</em> is an internal representation of site page. It is an object with fields, containing various file information.</p>
 ---
-
 *View* is an internal representation of site page. It is an object with fields, containing
 various file information.
 <!--cut-->

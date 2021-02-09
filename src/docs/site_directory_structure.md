@@ -1,7 +1,9 @@
 ---
 title: Site directory structure
+date: 2021.01.13 10:21
+section: 01.03
+excerpt: <p>The site files organized as follows:</p>
 ---
-
 The site files organized as follows:
 <!--cut-->
 

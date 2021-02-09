@@ -2,6 +2,9 @@
 title: Getting started
 name: gettingstarted
 lang: en
+date: 2021.01.13 10:21
+section: 01.01
+excerpt: <p>There are your first steps in setting up and start using Latid.</p>
 ---
 There are your first steps in setting up and start using Latid.
 <!--cut-->

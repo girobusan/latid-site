@@ -1,5 +1,8 @@
 ---
 title: Templates
+date: 2021.01.13 10:21
+section: 03.01
+excerpt: <p>A lots of Latid site functionality is based upon it's templating mechanics. Latid uses <a href="https://mozilla.github.io/nunjucks/">nunjucks templates</a>. There is mandatory file, <code>index.njk</code>, from where you may set up all the routing and other logic using nunjucks abilities to conditionally extend, include and so on.</p>
 ---
 A lots of Latid site functionality is based upon it's templating mechanics. 
 Latid uses [nunjucks templates](https://mozilla.github.io/nunjucks/). There is mandatory file, `index.njk`, from where you may set up all the routing and other logic using nunjucks abilities to conditionally extend, include and so on. 
@@ -47,5 +50,3 @@ custom templates for divider must be named `divider.njk`.
 You can not use extend, include or any other nunjucks method, which requires loading
 of external templates in block templates, contrary to the site templates.
 Additional filters also may be unavailable.
-
-

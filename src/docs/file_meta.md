@@ -1,7 +1,9 @@
 ---
 title: File metadata
+date: 2021.01.13 10:21
+section: 01.08
+excerpt: <p>You can add any metadata to your pages, for any use. Custom meta may work well for maintaining non-standard site structure and|or navigation. Some metadata used by engine, including those:</p>
 ---
-
 You can add any metadata to your pages, for any use. Custom meta may work well for maintaining non-standard site structure and|or navigation. Some metadata used by engine, including those:
 <!--cut-->
 

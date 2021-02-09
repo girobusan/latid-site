@@ -1,5 +1,8 @@
 ---
 title: Template variables
+date: 2021.01.13 10:21
+section: 03.02
+excerpt: <p>There are bunch of variables, which can be accessed from your nunjucks templates.</p>
 ---
 There are bunch of variables, which can be accessed from your nunjucks templates.
 <!--cut-->

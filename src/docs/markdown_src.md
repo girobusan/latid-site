@@ -1,7 +1,9 @@
 ---
 title: Markdown source files
+date: 2021.01.13 10:21
+section: 01.09
+excerpt: <p>You can use markdown formatted source files on your site alongside with others. It's possible to edit those files in GUI, including metadata. But you can not create markdown source files from GUI (yet).</p>
 ---
-
 You can use markdown formatted source files on your site alongside with others. It's possible to edit those files in GUI, including metadata. But you can not create markdown source files from GUI (yet).
 <!--cut-->
 

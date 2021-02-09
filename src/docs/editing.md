@@ -1,5 +1,8 @@
 ---
 title: Editing, saving and generating site
+date: 2021.01.13 10:21
+section: 01.04
+excerpt: <p>Editing files in GUI is pretty easy, and almost self-explanatory.</p>
 ---
 Editing files in GUI is pretty easy, and almost self-explanatory. 
 <!--cut-->

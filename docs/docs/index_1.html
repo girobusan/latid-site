@@ -21,6 +21,9 @@
         <ul class="navbar-nav nav">
           
           
+          
+          
+          
           <li class="nav-item" >
           <a  class="nav-link" href="../blog/index.html">Blog</a></li>
           
@@ -33,9 +36,6 @@
           
           <li class="nav-item" >
           <a  class="nav-link" href="../about.html">About </a></li>
-          
-          
-          
           
           
           
@@ -59,7 +59,7 @@
 
 Documentation</h1>
 <div class="lead" id="content">
-<p>Latid docs</p>
+<p>This is not an official documentation, files here are presented only as example of custom sorting.</p>
 
 </div>
 
@@ -68,13 +68,14 @@ Documentation</h1>
 
 <article>
 <hr>
-<h2><a href="../docs/markdown_src.html">Markdown source files</a></h2>
+<h2><a href="../docs/templates.html"><small>03.01</small>
+Templates</a></h2>
 
 
 
 
 
-  <div><p>You can use markdown formatted source files on your site alongside with others. It's possible to edit those files in GUI, including metadata. But you can not create markdown source files from GUI (yet).</p> </div> 
+  <div><p>A lots of Latid site functionality is based upon it's templating mechanics. Latid uses <a href="https://mozilla.github.io/nunjucks/">nunjucks templates</a>. There is mandatory file, <code>index.njk</code>, from where you may set up all the routing and other logic using nunjucks abilities to conditionally extend, include and so on.</p></div> 
 <div class ="row mb-3">
 <div class = "col-sm-12 col-md-6 text-muted">
 <!--2021.01.13 10:21:-->
@@ -83,7 +84,7 @@ Documentation</h1>
 </div>
 <div class = "col-sm-12 col-md-6">
 <p class="text-right">
-<a href="../docs/markdown_src.html" >
+<a href="../docs/templates.html" >
 continue reading...
 </a>
 </p>
@@ -93,7 +94,8 @@ continue reading...
 
 <article>
 <hr>
-<h2><a href="../docs/template_vars.html">Template variables</a></h2>
+<h2><a href="../docs/template_vars.html"><small>03.02</small>
+Template variables</a></h2>
 
 
 
@@ -118,14 +120,14 @@ continue reading...
 
 <article>
 <hr>
-<h2><a href="../docs/view.html">Files and views</a></h2>
+<h2><a href="../docs/view.html"><small>03.03</small>
+Files and views</a></h2>
 
 
 
 
 
-  <div><p><em>View</em> is an internal representation of site page. It is an object with fields, containing various file information.</p>
-</div> 
+  <div><p><em>View</em> is an internal representation of site page. It is an object with fields, containing various file information.</p></div> 
 <div class ="row mb-3">
 <div class = "col-sm-12 col-md-6 text-muted">
 <!--2021.01.13 10:21:-->
@@ -144,22 +146,23 @@ continue reading...
 
 <article>
 <hr>
-<h2><a href="../docs/settings_json.html">Settings.json structure</a></h2>
+<h2><a href="../docs/js_workaround.html"><small>4.01</small>
+Java Script workaround</a></h2>
 
 
 
 
 
-  <div><p>The settings file is  [your site dir/]_config/settings.json. That's how it looks like, explanation follows.</p> </div> 
+  <div><p>If your site has scripts, which are launched on DOMContentLoaded or something like this, they might not launch in GUI mode.</p> </div> 
 <div class ="row mb-3">
 <div class = "col-sm-12 col-md-6 text-muted">
 <!--2021.01.13 10:21:-->
 
-<small>30.04.12</small>
+<small>2021.01.13</small>
 </div>
 <div class = "col-sm-12 col-md-6">
 <p class="text-right">
-<a href="../docs/settings_json.html" >
+<a href="../docs/js_workaround.html" >
 continue reading...
 </a>
 </p>
@@ -205,15 +208,15 @@ continue reading...
             <ul class = "list-group list-group-flush">
               
                  
-                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
-              
-                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+                 <li class="list-group-item"><a href="../docs/blockeditor.html">Block editor</a></li>
               
                  <li class="list-group-item"><a href="../docs/editing.html">Editing, saving and generating site</a></li>
               
-                 <li class="list-group-item"><a href="../docs/file_meta.html">File metadata</a></li>
+                 <li class="list-group-item"><a href="../tags/examples.html">Examples</a></li>
               
-                 <li class="list-group-item"><a href="../docs/gettingstarted.html">Getting started</a></li>
+                 <li class="list-group-item"><a href="../docs/cli.html">Command Line Interface</a></li>
+              
+                 <li class="list-group-item"><a href="../docs/index.html">Documentation</a></li>
               
             </ul>
 
